@@ -4,14 +4,51 @@
     }
 } */
 
+@media screen and (max-width:1680px) {
+    .fea-project-rigth-vid a {
+        left: 30px
+    }
+    .badges-left-inner-title h2 {
+        font-size: 6.5rem;
+        line-height: 7.5rem;
+    }
+}
+
+@media screen and (max-width:1366px) {
+    .fea-project-rigth-vid {
+        width: 90%;
+    }
+    .fea-project-rigth-vid a {
+        left: 16px;
+    }
+    .badges-left-inner-title h2 {
+        font-size: 5.5rem;
+        line-height: 6.5rem;
+    }
+}
+
 @media screen and (max-width:1199px) {
     .view-project-inner-box {
         width: 120px;
         height: 118px;
     }
+    .badges-left-inner {
+        width: 65%;
+    }
+    .badges-right-inner {
+        width: 35%;
+    }
+    .badges-left-inner-title h2 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
 }
 
 @media screen and (max-width:991px) {
+    .badges-left-inner-title h2 {
+        font-size: 3rem;
+        line-height: 4.5rem;
+    }
     .header-inner {
         flex-direction: column;
     }
@@ -65,6 +102,19 @@
 }
 
 @media screen and (max-width:767px) {
+    .badges-hero-inner {
+        flex-direction: column;
+    }
+    .badges-left-inner {
+        width: 100%;
+    }
+    .badges-right-inner {
+        width: 100%;
+        padding-top: 2rem;
+    }
+    .badges-right-inner-content {
+        flex-direction: row;
+    }
     .container {
         padding: 0px 1rem;
     }
@@ -86,6 +136,9 @@
     .fea-project-inner-title {
         padding: 2rem 0;
     }
+    .badges-main-top.bottom .badges-main-top-inner {
+        padding-top: 1rem;
+    }
 }
 
 @media screen and (max-width:575px) {
@@ -95,11 +148,49 @@
     .fea-project-inner-title h3 {
         font-size: 32px;
     }
+    span.hero-main-txt {
+        line-height: 4.5rem;
+    }
+    .badges-top-inner-box-link p {
+        font-size: 14px;
+    }
+    .badges-top-inner-box-link a {
+        font-size: 14px;
+    }
+    .badges-main-top-inner {
+        flex-direction: column;
+    }
+    .badges-main-top-inner-box {
+        width: 70%;
+    }
 }
 
 @media screen and (max-width:479px) {
     .about-desc p {
         font-size: 26px;
         width: 100%;
+    }
+    .badges-left-inner-title h2 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .badges-right-inner-content {
+        flex-direction: column;
+    }
+    .badges-right-inner-content-image {
+        text-align: left;
+    }
+    .badges-right-inner-content-image img {
+        width: 80%;
+    }
+    .badges-main-top-inner-box {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .badges-left-inner-title h2 {
+        font-size: 2.2rem;
+        line-height: 3.5rem;
     }
 }

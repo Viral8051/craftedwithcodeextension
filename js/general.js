@@ -56,5 +56,12 @@ $(document).ready(function() {
     //     centerMode: true,
     //     variableWidth: true
     // });
+    $(window).bind('scroll', function() {
+        if ($(window).scrollTop() > 50) {
+            $('.staticheader').addClass('fixed');
+        } else {
+            $('.staticheader').removeClass('fixed');
+        }
+    });
 
 });
