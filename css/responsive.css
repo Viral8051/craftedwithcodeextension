@@ -137,6 +137,12 @@
 }
 
 @media screen and (max-width:767px) {
+    .main-nav-tabs::after {
+        right: -15px;
+    }
+    .hamburger span {
+        margin: 8px 0px 8px auto;
+    }
     #header.fixed {
         position: relative;
     }
