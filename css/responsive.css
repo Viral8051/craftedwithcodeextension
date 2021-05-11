@@ -42,6 +42,20 @@
         font-size: 4rem;
         line-height: 5rem;
     }
+    .main-nav.active {
+        animation: menures 0.3s linear;
+        right: 0;
+        width: 100%;
+    }
+    .main-nav-tabs a {
+        font-size: 16px;
+    }
+    li.main-menu-inner-list h2 {
+        font-size: 16px;
+    }
+    li.main-menu-inner-list span {
+        font-size: 11px;
+    }
 }
 
 @media screen and (max-width:991px) {
@@ -49,15 +63,15 @@
         font-size: 3rem;
         line-height: 4.5rem;
     }
-    .header-inner {
-        flex-direction: column;
+    .staticheader .container {
+        padding: 0 15px;
     }
     .header-left {
         text-align: center;
     }
     .header-center {
         padding: 10px 0;
-        width: 100%;
+        width: 50%;
     }
     .header-search {
         width: 50%;
@@ -99,9 +113,60 @@
         width: 100%;
         height: 97%;
     }
+    .main-nav-tabs-inner {
+        flex-wrap: wrap;
+    }
+    .main-nav-tabs {
+        padding: 15px;
+        position: relative;
+    }
+    .main-nav-tabs::after {
+        content: "";
+        position: absolute;
+        right: -20px;
+        border: 1px solid #38bac8;
+        height: 50%;
+        top: 10px;
+    }
+    .main-nav-tabs:last-child:after {
+        content: none;
+    }
+    ul.main-tab-inner-content1.active {
+        height: 415px;
+    }
 }
 
 @media screen and (max-width:767px) {
+    #header.fixed {
+        position: relative;
+    }
+    .wordpress-box-title h2 {
+        font-size: 30px;
+    }
+    .header-search {
+        width: 80%;
+    }
+    .hamburger {
+        width: 20%;
+    }
+    .header-right {
+        width: 100%;
+    }
+    .header-left {
+        width: 50%;
+    }
+    .header-inner {
+        flex-wrap: wrap;
+    }
+    .main-nav.active {
+        top: 129px;
+    }
+    .header-left {
+        text-align: left;
+    }
+    .header-center-logo1 {
+        width: 100%;
+    }
     .badges-hero-inner {
         flex-direction: column;
     }
@@ -138,6 +203,34 @@
     }
     .badges-main-top.bottom .badges-main-top-inner {
         padding-top: 1rem;
+    }
+    .wordpress-slider .class-to-style.prev-btn.slick-arrow {
+        position: absolute;
+        top: unset;
+        left: 40%;
+        bottom: -30px;
+    }
+    .wordpress-slider .class-to-style.next-btn.slick-arrow {
+        position: absolute;
+        top: unset;
+        right: 40%;
+        bottom: -30px;
+    }
+    .slick-arrow i {
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .wordpresslast-slider .class-to-style.prev-btn.slick-arrow {
+        position: absolute;
+        top: unset;
+        left: 40%;
+        bottom: -30px;
+    }
+    .wordpresslast-slider .class-to-style.next-btn.slick-arrow {
+        position: absolute;
+        top: unset;
+        right: 40%;
+        bottom: -30px;
     }
 }
 
@@ -186,11 +279,21 @@
     .badges-main-top-inner-box {
         width: 90%;
     }
+    li.main-menu-inner-list {
+        width: 100%;
+        padding: 20px;
+    }
+    .wordpress-box-link a {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width:350px) {
     .badges-left-inner-title h2 {
         font-size: 2.2rem;
         line-height: 3.5rem;
+    }
+    .wordpress-box-title h2 {
+        font-size: 26px;
     }
 }
